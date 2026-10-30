@@ -14,6 +14,9 @@ The portfolio features three end-to-end analytics case studies:
 
 Only these three projects are included.
 
+**Live site:** <https://rubankumar296-maker.github.io/portfolio/>
+**Repository:** <https://github.com/rubankumar296-maker/portfolio>
+
 ---
 
 ## Open the portfolio
@@ -27,6 +30,23 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000` in your browser.
+
+---
+
+## Publish changes
+
+The live site is GitHub Pages, served from the `main` branch. This folder is a git
+repository with `origin` pointing at the GitHub repo, so a commit to `main`
+redeploys the site within about a minute:
+
+```powershell
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+GitHub will ask you to sign in the first time you push. Small text edits can also
+be made directly on GitHub in the browser, which redeploys the same way.
 
 ---
 
