@@ -1,0 +1,46 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Customer Financial Profile &#8212; finance cover art</title>
+  <desc id="d2">Editorial grayscale composition with concentric credit gauges, a rising savings area chart, and fine rules on an off-white paper ground.</desc>
+  <defs>
+    <linearGradient id="line2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#bcbcb8"/>
+      <stop offset="1" stop-color="#1a1b1a"/>
+    </linearGradient>
+    <linearGradient id="area2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1b1a" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1a1b1a" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid2" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#1a1b1a" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="680" fill="#f8f7f3"/>
+  <rect width="1200" height="680" fill="url(#grid2)"/>
+  <circle cx="862" cy="300" r="340" fill="#1a1b1a" fill-opacity="0.028"/>
+
+  <g fill="none" stroke="#1a1b1a">
+    <circle cx="862" cy="300" r="242" stroke-opacity="0.14" stroke-width="1.5"/>
+    <circle cx="862" cy="300" r="186" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="2 9"/>
+    <circle cx="862" cy="300" r="130" stroke-opacity="0.14" stroke-width="1.5"/>
+  </g>
+  <path d="M862 58a242 242 0 0 1 210 363" fill="none" stroke="#1a1b1a" stroke-opacity="0.82" stroke-width="16" stroke-linecap="round"/>
+  <path d="M862 114a186 186 0 0 0-160 284" fill="none" stroke="#797a74" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M862 170a130 130 0 0 1 113 195" fill="none" stroke="#1a1b1a" stroke-opacity="0.24" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="862" cy="300" r="66" fill="#f8f7f3" stroke="#1a1b1a" stroke-opacity="0.26" stroke-width="1.5"/>
+  <circle cx="862" cy="300" r="8" fill="#1a1b1a"/>
+  <path d="M862 300 930 226" stroke="#1a1b1a" stroke-opacity="0.72" stroke-width="3" stroke-linecap="round"/>
+
+  <line x1="88" y1="562" x2="700" y2="562" stroke="#1a1b1a" stroke-opacity="0.3" stroke-width="1"/>
+
+  <path d="M100 522 178 486 256 498 334 438 412 458 490 396 568 418 646 350v212H100Z" fill="url(#area2)"/>
+  <path d="M100 522 178 486 256 498 334 438 412 458 490 396 568 418 646 350" fill="none" stroke="url(#line2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f8f7f3" stroke="#1a1b1a" stroke-width="2.5">
+    <circle cx="100" cy="522" r="4"/><circle cx="256" cy="498" r="4"/><circle cx="412" cy="458" r="4"/>
+    <circle cx="568" cy="418" r="4"/><circle cx="646" cy="350" r="5"/>
+  </g>
+
+  <text x="1124" y="628" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="300" fill="#1a1b1a" fill-opacity="0.06">02</text>
+  <text x="108" y="624" font-family="Consolas, 'Courier New', monospace" font-size="17" letter-spacing="5" fill="#1a1b1a" fill-opacity="0.78">CUSTOMER FINANCE</text>
+  <text x="108" y="654" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="1.5" fill="#6b6c67">INCOME &#183; SAVINGS &#183; CREDIT &#183; RISK</text>
+</svg>

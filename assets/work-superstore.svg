@@ -1,0 +1,46 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Global Superstore &#8212; sales and profit cover art</title>
+  <desc id="d1">Editorial grayscale chart with ascending bars, a rising profit line, fine rules, and a large numeral on an off-white paper ground.</desc>
+  <defs>
+    <linearGradient id="bar1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#cfcfca"/>
+      <stop offset="1" stop-color="#2c2d29"/>
+    </linearGradient>
+    <pattern id="grid1" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#1a1b1a" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="680" fill="#fbfbf8"/>
+  <rect width="1200" height="680" fill="url(#grid1)"/>
+  <circle cx="965" cy="235" r="330" fill="#1a1b1a" fill-opacity="0.03"/>
+
+  <path d="M0 660 1200 470v210H0Z" fill="#1a1b1a" fill-opacity="0.035"/>
+  <circle cx="965" cy="235" r="188" fill="none" stroke="#1a1b1a" stroke-opacity="0.16" stroke-width="1.5"/>
+  <circle cx="965" cy="235" r="132" fill="none" stroke="#1a1b1a" stroke-opacity="0.1" stroke-width="1.5"/>
+  <path d="M965 47a188 188 0 0 1 162 282" fill="none" stroke="#1a1b1a" stroke-opacity="0.72" stroke-width="10" stroke-linecap="round"/>
+  <path d="M965 103a132 132 0 0 0-114 199" fill="none" stroke="#797a74" stroke-opacity="0.6" stroke-width="4" stroke-linecap="round"/>
+
+  <line x1="88" y1="562" x2="640" y2="562" stroke="#1a1b1a" stroke-opacity="0.28" stroke-width="1"/>
+
+  <g>
+    <rect x="108" y="430" width="46" height="130" rx="2" fill="url(#bar1)" fill-opacity="0.34"/>
+    <rect x="180" y="370" width="46" height="190" rx="2" fill="url(#bar1)" fill-opacity="0.46"/>
+    <rect x="252" y="400" width="46" height="160" rx="2" fill="url(#bar1)" fill-opacity="0.4"/>
+    <rect x="324" y="310" width="46" height="250" rx="2" fill="url(#bar1)" fill-opacity="0.6"/>
+    <rect x="396" y="340" width="46" height="220" rx="2" fill="url(#bar1)" fill-opacity="0.54"/>
+    <rect x="468" y="250" width="46" height="310" rx="2" fill="url(#bar1)" fill-opacity="0.72"/>
+    <rect x="540" y="200" width="46" height="360" rx="2" fill="url(#bar1)" fill-opacity="0.86"/>
+  </g>
+
+  <path d="M131 397 203 347 275 372 347 274 419 300 491 218 563 168" fill="none" stroke="#1a1b1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fbfbf8" stroke="#1a1b1a" stroke-width="2.5">
+    <circle cx="131" cy="397" r="5"/><circle cx="203" cy="347" r="5"/><circle cx="275" cy="372" r="5"/>
+    <circle cx="347" cy="274" r="5"/><circle cx="419" cy="300" r="5"/><circle cx="491" cy="218" r="5"/>
+    <circle cx="563" cy="168" r="6"/>
+  </g>
+
+  <text x="1124" y="628" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="300" fill="#1a1b1a" fill-opacity="0.06">01</text>
+  <text x="108" y="624" font-family="Consolas, 'Courier New', monospace" font-size="17" letter-spacing="5" fill="#1a1b1a" fill-opacity="0.78">SALES / PROFIT</text>
+  <text x="108" y="654" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="1.5" fill="#6b6c67">50K+ TRANSACTIONS &#183; 5 REGIONS</text>
+</svg>

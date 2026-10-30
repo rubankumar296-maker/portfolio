@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruban Kumar N — Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Ruban Kumar N, an entry-level data analyst working with Python, SQL, Power BI, DAX, and Excel. Three end-to-end analytics case studies, from raw data to interactive dashboards.">
+  <meta name="author" content="Ruban Kumar N">
+  <meta name="theme-color" content="#f4f2ec">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ruban Kumar N — Data Analyst Portfolio">
+  <meta property="og:description" content="Three end-to-end data analytics projects built with Python, SQL, and Power BI.">
+  <meta property="og:image" content="assets/work-superstore.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="680">
+  <meta property="og:image:alt" content="Illustrative cover art for the Global Superstore analytics case study">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('rk-theme-v3');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ruban Kumar N",
+      "jobTitle": "Data Analyst",
+      "email": "mailto:rubankumar296@gmail.com",
+      "telephone": "+91-8428908154",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "url": "https://github.com/rubankumar296-maker",
+      "sameAs": [
+        "https://github.com/rubankumar296-maker",
+        "https://www.linkedin.com/in/rubankumar7"
+      ],
+      "knowsAbout": ["Data Analysis", "Python", "SQL", "MySQL", "Power BI", "DAX", "Data Visualization"]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-wash bg-wash-one"></div>
+    <div class="bg-wash bg-wash-two"></div>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ───────────────────────── HEADER ───────────────────────── -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top">
+        <span class="brand-mark">RK</span>
+        <span class="brand-copy">
+          <span class="brand-name">Ruban Kumar N</span>
+          <span class="brand-role">Data Analyst</span>
+        </span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="#about">About me</a>
+        <a class="nav-link" href="#work">Project Section</a>
+        <a class="nav-link" href="#toolkit">Toolkit</a>
+        <a class="nav-link" href="#credentials">Credentials</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-small btn-outline nav-resume" href="assets/Ruban-Kumar-N-Resume.pdf" download>
+          Résumé
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"></path></svg>
+        </a>
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20.2 14.3A8.4 8.4 0 0 1 9.7 3.8 8.4 8.4 0 1 0 20.2 14.3Z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-top reveal">
+          <span class="status-pill"><i class="status-dot"></i>Open to data analyst opportunities</span>
+          <span class="hero-location">
+            Chennai, India
+            <span class="hero-time" id="heroTime">IST</span>
+          </span>
+        </div>
+
+        <h1 class="hero-title reveal" data-delay="1">
+          Turning raw data into
+          <em>clear, confident</em> decisions.
+        </h1>
+
+        <div class="hero-grid">
+          <div class="hero-intro">
+            <p class="hero-lede reveal" data-delay="2">
+              I'm <strong>Ruban Kumar N</strong>, an entry-level data analyst with hands-on project
+              experience in Python, SQL (MySQL), Power&nbsp;BI, DAX, and Excel. I clean and validate
+              messy datasets, ask sharper questions with SQL, and build interactive reports that
+              make the next decision easier.
+            </p>
+
+            <div class="hero-actions reveal" data-delay="3">
+              <a class="btn btn-primary" href="#work">
+                Explore selected work
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+              <a class="btn btn-outline" href="assets/Ruban-Kumar-N-Resume.pdf" download>
+                Download résumé
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"></path></svg>
+              </a>
+            </div>
+
+            <dl class="hero-stats reveal" data-delay="4">
+              <div>
+                <dt>Case studies</dt>
+                <dd><span class="stat-num" data-count="3" data-pad="true">03</span></dd>
+              </div>
+              <div>
+                <dt>Dashboard pages</dt>
+                <dd><span class="stat-num" data-count="11">11</span></dd>
+              </div>
+              <div>
+                <dt>Records analysed</dt>
+                <dd><span class="stat-num" data-count="107" data-suffix="K+">107K+</span></dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="hero-figure reveal" data-delay="3">
+            <button class="hero-shot js-open-project" type="button" data-project="superstore" aria-label="Open the Global Superstore case study — Featured case study, View report">
+              <svg class="cover-art" viewBox="0 0 1200 680" aria-hidden="true" focusable="false">
+                <rect class="cov-bg" width="1200" height="680"></rect>
+                <path class="cov-grid" d="M80 0v680M160 0v680M240 0v680M320 0v680M400 0v680M480 0v680M560 0v680M640 0v680M720 0v680M800 0v680M880 0v680M960 0v680M1040 0v680M1120 0v680M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M0 640h1200"></path>
+                <circle class="cov-halo" cx="965" cy="235" r="330"></circle>
+                <circle class="cov-ring" cx="965" cy="235" r="188"></circle>
+                <circle class="cov-ring cov-ring-faint" cx="965" cy="235" r="132"></circle>
+                <path class="cov-arc" d="M965 47a188 188 0 0 1 162 282"></path>
+                <path class="cov-arc cov-arc-soft" d="M965 103a132 132 0 0 0-114 199"></path>
+                <path class="cov-rule" d="M88 562h552"></path>
+                <g class="cov-bars">
+                  <rect x="108" y="430" width="46" height="130" rx="2" opacity=".34"></rect>
+                  <rect x="180" y="370" width="46" height="190" rx="2" opacity=".46"></rect>
+                  <rect x="252" y="400" width="46" height="160" rx="2" opacity=".4"></rect>
+                  <rect x="324" y="310" width="46" height="250" rx="2" opacity=".6"></rect>
+                  <rect x="396" y="340" width="46" height="220" rx="2" opacity=".54"></rect>
+                  <rect x="468" y="250" width="46" height="310" rx="2" opacity=".72"></rect>
+                  <rect x="540" y="200" width="46" height="360" rx="2" opacity=".86"></rect>
+                </g>
+                <path class="cov-line" d="M131 397 203 347 275 372 347 274 419 300 491 218 563 168"></path>
+                <g class="cov-dots">
+                  <circle cx="131" cy="397" r="5"></circle><circle cx="203" cy="347" r="5"></circle><circle cx="275" cy="372" r="5"></circle>
+                  <circle cx="347" cy="274" r="5"></circle><circle cx="419" cy="300" r="5"></circle><circle cx="491" cy="218" r="5"></circle>
+                  <circle cx="563" cy="168" r="6"></circle>
+                </g>
+                <g class="cov-axis">
+                  <rect x="108" y="612" width="168" height="10" rx="5"></rect>
+                  <rect x="108" y="632" width="104" height="8" rx="4" opacity=".55"></rect>
+                  <rect x="108" y="650" width="64" height="6" rx="3" opacity=".35"></rect>
+                </g>
+              </svg>
+              <span class="shot-badge">Featured case study</span>
+              <span class="shot-open">
+                View report
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+              </span>
+            </button>
+            <figcaption>
+              <span>Global Superstore · Sales &amp; profitability</span>
+              <span>4-page Power BI report</span>
+            </figcaption>
+            <span class="figure-note figure-note-a">Python</span>
+            <span class="figure-note figure-note-b">SQL</span>
+            <span class="figure-note figure-note-c">Power BI</span>
+          </figure>
+        </div>
+      </div>
+
+      <div class="tool-strip" aria-label="Core tools">
+        <div class="tool-strip-track">
+          <div class="tool-strip-group">
+            <span>Python</span><i>✳</i><span>Pandas</span><i>✳</i><span>NumPy</span><i>✳</i><span>SQL</span><i>✳</i><span>MySQL</span><i>✳</i><span>Power BI</span><i>✳</i><span>DAX</span><i>✳</i><span>Excel</span><i>✳</i><span>Matplotlib</span><i>✳</i><span>Seaborn</span><i>✳</i><span>Git</span><i>✳</i>
+          </div>
+          <div class="tool-strip-group" aria-hidden="true">
+            <span>Python</span><i>✳</i><span>Pandas</span><i>✳</i><span>NumPy</span><i>✳</i><span>SQL</span><i>✳</i><span>MySQL</span><i>✳</i><span>Power BI</span><i>✳</i><span>DAX</span><i>✳</i><span>Excel</span><i>✳</i><span>Matplotlib</span><i>✳</i><span>Seaborn</span><i>✳</i><span>Git</span><i>✳</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── ABOUT ───────────────────────── -->
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label"><span>01</span> About me</div>
+          <div class="section-head-row">
+            <h2 class="section-title">About <em>me</em></h2>
+            <p class="section-note">
+              I like the part of analytics where the answer is not obvious yet: the messy data,
+              the questions that need refining, and the moment a dashboard makes something click.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I'm <strong>Ruban Kumar N</strong>, an entry-level data analyst based in Chennai.
+              My work sits at the intersection of <strong>Python, SQL (MySQL), and Power BI</strong> —
+              from validating raw data to building reports that support real decisions.
+            </p>
+            <p>
+              I've built three end-to-end projects across retail, sports, and finance — 51,290
+              sales transactions, 1,000 customer financial profiles, and 54,600 player-match
+              records. Each one starts with a raw dataset, moves through cleaning, exploration,
+              and SQL analysis, and ends with an interactive Power BI report and documented
+              findings.
+            </p>
+            <p>
+              I'm early in my career, but I work like an analyst: validate the data before trusting
+              it, define metrics carefully, and explain what the numbers can — and cannot — tell you.
+            </p>
+            <ul class="about-tags" aria-label="What I focus on">
+              <li>End-to-end analytics</li>
+              <li>Data quality</li>
+              <li>Business storytelling</li>
+              <li>Dashboard design</li>
+            </ul>
+          </div>
+
+          <aside class="about-card reveal" data-delay="1" aria-label="Profile summary">
+            <div class="about-card-head">
+              <span class="monogram" aria-hidden="true">RK</span>
+              <div>
+                <h3>Ruban Kumar N</h3>
+                <p>Data Analyst · Chennai, IN</p>
+              </div>
+              <span class="available-dot" role="img" title="Open to opportunities" aria-label="Open to opportunities"></span>
+            </div>
+
+            <dl class="fact-list">
+              <div>
+                <dt>Focus</dt>
+                <dd>Business &amp; product analytics</dd>
+              </div>
+              <div>
+                <dt>Toolkit</dt>
+                <dd>Python · SQL · Power BI · Excel</dd>
+              </div>
+              <div>
+                <dt>Education</dt>
+                <dd>B.E. ECE · 2022–2026</dd>
+              </div>
+              <div>
+                <dt>Currently</dt>
+                <dd>Building in public on GitHub</dd>
+              </div>
+            </dl>
+
+            <div class="about-card-foot">
+              <a class="text-link" href="https://github.com/rubankumar296-maker" target="_blank" rel="noopener">
+                Explore my GitHub
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+              </a>
+              <a class="text-link" href="assets/Ruban-Kumar-N-Resume.pdf" download>
+                Résumé
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"></path></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── WORK ───────────────────────── -->
+    <section class="section work-section" id="work" aria-labelledby="workTitle">
+      <div class="container">
+        <div class="work-head reveal">
+          <div class="section-label work-label"><span>02</span> Project Section</div>
+          <div class="work-head-row">
+            <div class="work-head-copy">
+              <h2 class="work-title" id="workTitle">Project <em>Section</em></h2>
+              <p class="work-lede">
+                Three end-to-end analytics projects across retail, finance, and sport. Each one
+                starts with a raw dataset and ends with a report built to answer a real business
+                question.
+              </p>
+            </div>
+            <div class="work-controls" aria-label="Project carousel controls">
+              <span class="work-count"><span id="workCurrent">01</span> / 03</span>
+              <div class="work-arrows">
+                <button class="work-arrow" id="workPrev" type="button" aria-label="Previous project" aria-controls="workTrack" disabled>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+                </button>
+                <button class="work-arrow" id="workNext" type="button" aria-label="Next project" aria-controls="workTrack">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-rail" id="workTrack" tabindex="0" role="region" aria-label="Selected projects">
+          <article class="work-card reveal">
+            <button class="work-cover js-open-project" type="button" data-project="superstore" aria-label="Open the Global Superstore case study — 01, Sales &amp; retail, View case study">
+              <svg class="cover-art" viewBox="0 0 1200 680" aria-hidden="true" focusable="false">
+                <rect class="cov-bg" width="1200" height="680"></rect>
+                <path class="cov-grid" d="M80 0v680M160 0v680M240 0v680M320 0v680M400 0v680M480 0v680M560 0v680M640 0v680M720 0v680M800 0v680M880 0v680M960 0v680M1040 0v680M1120 0v680M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M0 640h1200"></path>
+                <circle class="cov-halo" cx="965" cy="235" r="330"></circle>
+                <circle class="cov-ring" cx="965" cy="235" r="188"></circle>
+                <circle class="cov-ring cov-ring-faint" cx="965" cy="235" r="132"></circle>
+                <path class="cov-arc" d="M965 47a188 188 0 0 1 162 282"></path>
+                <path class="cov-arc cov-arc-soft" d="M965 103a132 132 0 0 0-114 199"></path>
+                <path class="cov-rule" d="M88 562h552"></path>
+                <g class="cov-bars">
+                  <rect x="108" y="430" width="46" height="130" rx="2" opacity=".34"></rect>
+                  <rect x="180" y="370" width="46" height="190" rx="2" opacity=".46"></rect>
+                  <rect x="252" y="400" width="46" height="160" rx="2" opacity=".4"></rect>
+                  <rect x="324" y="310" width="46" height="250" rx="2" opacity=".6"></rect>
+                  <rect x="396" y="340" width="46" height="220" rx="2" opacity=".54"></rect>
+                  <rect x="468" y="250" width="46" height="310" rx="2" opacity=".72"></rect>
+                  <rect x="540" y="200" width="46" height="360" rx="2" opacity=".86"></rect>
+                </g>
+                <path class="cov-line" d="M131 397 203 347 275 372 347 274 419 300 491 218 563 168"></path>
+                <g class="cov-dots">
+                  <circle cx="131" cy="397" r="5"></circle><circle cx="203" cy="347" r="5"></circle><circle cx="275" cy="372" r="5"></circle>
+                  <circle cx="347" cy="274" r="5"></circle><circle cx="419" cy="300" r="5"></circle><circle cx="491" cy="218" r="5"></circle>
+                  <circle cx="563" cy="168" r="6"></circle>
+                </g>
+                <g class="cov-axis">
+                  <rect x="108" y="612" width="168" height="10" rx="5"></rect>
+                  <rect x="108" y="632" width="104" height="8" rx="4" opacity=".55"></rect>
+                  <rect x="108" y="650" width="64" height="6" rx="3" opacity=".35"></rect>
+                </g>
+              </svg>
+              <span class="work-cover-top">
+                <span class="work-index">01</span>
+                <span class="work-tag">Sales &amp; retail</span>
+              </span>
+              <span class="work-open">
+                View case study
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </span>
+            </button>
+            <div class="work-body">
+              <div class="work-meta">
+                <span>4-page report</span>
+                <span>Python · SQL · Power BI</span>
+              </div>
+              <h3>Global Superstore Sales &amp; Profit Analytics</h3>
+              <p>
+                A four-page Power BI suite built on 51,290 sales transactions (2011–2014),
+                connecting sales, profit, products, and customers to ask whether growth is
+                actually healthy.
+              </p>
+              <div class="work-foot">
+                <button class="work-link js-open-project" type="button" data-project="superstore">
+                  View case study
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+                <a class="work-repo" href="https://github.com/rubankumar296-maker/GLOBAL_SUPERSTORE_SALES_ANALYTICS" target="_blank" rel="noopener" aria-label="Global Superstore repository on GitHub">
+                  GitHub
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-delay="1">
+            <button class="work-cover js-open-project" type="button" data-project="financial" aria-label="Open the Customer Financial Profile case study — 02, Customer &amp; finance, View case study">
+              <svg class="cover-art" viewBox="0 0 1200 680" aria-hidden="true" focusable="false">
+                <rect class="cov-bg" width="1200" height="680"></rect>
+                <path class="cov-grid" d="M80 0v680M160 0v680M240 0v680M320 0v680M400 0v680M480 0v680M560 0v680M640 0v680M720 0v680M800 0v680M880 0v680M960 0v680M1040 0v680M1120 0v680M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M0 640h1200"></path>
+                <circle class="cov-halo" cx="862" cy="300" r="340"></circle>
+                <circle class="cov-ring" cx="862" cy="300" r="242"></circle>
+                <circle class="cov-ring cov-ring-faint" cx="862" cy="300" r="186" stroke-dasharray="2 9"></circle>
+                <circle class="cov-ring cov-ring-faint" cx="862" cy="300" r="130"></circle>
+                <path class="cov-arc" d="M862 58a242 242 0 0 1 210 363"></path>
+                <path class="cov-arc cov-arc-soft" d="M862 114a186 186 0 0 0-160 284"></path>
+                <path class="cov-arc cov-arc-faint" d="M862 170a130 130 0 0 1 113 195"></path>
+                <circle class="cov-hub" cx="862" cy="300" r="66"></circle>
+                <circle class="cov-node" cx="862" cy="300" r="8"></circle>
+                <path class="cov-needle" d="M862 300 930 226"></path>
+                <path class="cov-rule" d="M88 562h612"></path>
+                <path class="cov-area" d="M100 522 178 486 256 498 334 438 412 458 490 396 568 418 646 350v212H100Z"></path>
+                <path class="cov-line" d="M100 522 178 486 256 498 334 438 412 458 490 396 568 418 646 350"></path>
+                <g class="cov-dots">
+                  <circle cx="100" cy="522" r="4"></circle><circle cx="256" cy="498" r="4"></circle><circle cx="412" cy="458" r="4"></circle>
+                  <circle cx="568" cy="418" r="4"></circle><circle cx="646" cy="350" r="5"></circle>
+                </g>
+                <g class="cov-axis">
+                  <rect x="108" y="612" width="168" height="10" rx="5"></rect>
+                  <rect x="108" y="632" width="104" height="8" rx="4" opacity=".55"></rect>
+                  <rect x="108" y="650" width="64" height="6" rx="3" opacity=".35"></rect>
+                </g>
+              </svg>
+              <span class="work-cover-top">
+                <span class="work-index">02</span>
+                <span class="work-tag">Customer &amp; finance</span>
+              </span>
+              <span class="work-open">
+                View case study
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </span>
+            </button>
+            <div class="work-body">
+              <div class="work-meta">
+                <span>4-page report</span>
+                <span>Python · SQL · Power BI</span>
+              </div>
+              <h3>Customer Financial Profile Analysis</h3>
+              <p>
+                A four-page customer analytics report profiling 1,000 records — income, savings,
+                borrowing, credit scores, and supplied risk categories.
+              </p>
+              <div class="work-foot">
+                <button class="work-link js-open-project" type="button" data-project="financial">
+                  View case study
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+                <a class="work-repo" href="https://github.com/rubankumar296-maker/CUSTOMER_FINANCIAL_PROFILE_ANALYSIS" target="_blank" rel="noopener" aria-label="Customer Financial Profile repository on GitHub">
+                  GitHub
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-delay="2">
+            <button class="work-cover js-open-project" type="button" data-project="fifa" aria-label="Open the FIFA World Cup 2026 case study — 03, Sports analytics, View case study">
+              <svg class="cover-art" viewBox="0 0 1200 680" aria-hidden="true" focusable="false">
+                <rect class="cov-bg" width="1200" height="680"></rect>
+                <path class="cov-grid" d="M80 0v680M160 0v680M240 0v680M320 0v680M400 0v680M480 0v680M560 0v680M640 0v680M720 0v680M800 0v680M880 0v680M960 0v680M1040 0v680M1120 0v680M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M0 640h1200"></path>
+                <circle class="cov-halo" cx="880" cy="270" r="330"></circle>
+                <g class="cov-pitch">
+                  <rect x="90" y="86" width="1020" height="508" rx="4"></rect>
+                  <path d="M600 86v508"></path>
+                  <circle cx="600" cy="340" r="92"></circle>
+                  <rect x="90" y="226" width="126" height="228"></rect>
+                  <rect x="90" y="286" width="50" height="108"></rect>
+                  <rect x="984" y="226" width="126" height="228"></rect>
+                  <rect x="1060" y="286" width="50" height="108"></rect>
+                  <path d="M216 282a60 60 0 0 1 0 116M984 282a60 60 0 0 0 0 116"></path>
+                </g>
+                <circle class="cov-node" cx="600" cy="340" r="5" opacity=".6"></circle>
+                <g class="cov-net">
+                  <path d="M320 214 430 300 388 430 512 388 540 268"></path>
+                  <path d="M760 188 820 286 770 380 884 448 940 318 892 232"></path>
+                  <path d="M430 300 512 388 600 340 770 380"></path>
+                  <path d="M540 268 600 340 760 188"></path>
+                </g>
+                <g class="cov-node">
+                  <circle cx="320" cy="214" r="10" opacity=".88"></circle>
+                  <circle cx="430" cy="300" r="7" opacity=".58"></circle>
+                  <circle cx="388" cy="430" r="12" opacity=".76"></circle>
+                  <circle cx="512" cy="388" r="6" opacity=".5"></circle>
+                  <circle cx="540" cy="268" r="8" opacity=".66"></circle>
+                  <circle cx="760" cy="188" r="11" opacity=".88"></circle>
+                  <circle cx="820" cy="286" r="6" opacity=".48"></circle>
+                  <circle cx="770" cy="380" r="9" opacity=".64"></circle>
+                  <circle cx="884" cy="448" r="7" opacity=".7"></circle>
+                  <circle cx="940" cy="318" r="5" opacity=".46"></circle>
+                  <circle cx="892" cy="232" r="8" opacity=".6"></circle>
+                </g>
+                <circle class="cov-node-ring" cx="600" cy="340" r="13"></circle>
+                <g class="cov-dots">
+                  <circle cx="512" cy="388" r="3.4"></circle>
+                  <circle cx="820" cy="286" r="3.4"></circle>
+                  <circle cx="940" cy="318" r="3.4"></circle>
+                </g>
+                <g class="cov-bars">
+                  <rect x="1068" y="512" width="8" height="34" rx="2" opacity=".42"></rect>
+                  <rect x="1084" y="492" width="8" height="54" rx="2" opacity=".58"></rect>
+                  <rect x="1100" y="468" width="8" height="78" rx="2" opacity=".8"></rect>
+                  <rect x="1116" y="478" width="8" height="68" rx="2" opacity=".64"></rect>
+                </g>
+                <path class="cov-rule" d="M1060 562h76"></path>
+                <g class="cov-axis">
+                  <rect x="108" y="612" width="168" height="10" rx="5"></rect>
+                  <rect x="108" y="632" width="104" height="8" rx="4" opacity=".55"></rect>
+                  <rect x="108" y="650" width="64" height="6" rx="3" opacity=".35"></rect>
+                </g>
+              </svg>
+              <span class="work-cover-top">
+                <span class="work-index">03</span>
+                <span class="work-tag">Sports analytics</span>
+              </span>
+              <span class="work-open">
+                View case study
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </span>
+            </button>
+            <div class="work-body">
+              <div class="work-meta">
+                <span>3-page report</span>
+                <span>Python · SQL · Power BI</span>
+              </div>
+              <h3>FIFA World Cup 2026 Player Performance</h3>
+              <p>
+                A three-page football analytics report built from 54,600 player-match records and
+                75 columns, comparing players, teams, and match outcomes.
+              </p>
+              <div class="work-foot">
+                <button class="work-link js-open-project" type="button" data-project="fifa">
+                  View case study
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </button>
+                <a class="work-repo" href="https://github.com/rubankumar296-maker/FIFA_WORLD_CUP_2026_ANALYSIS" target="_blank" rel="noopener" aria-label="FIFA World Cup 2026 repository on GitHub">
+                  GitHub
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="work-bottom reveal">
+          <span class="work-note">Illustrative cover art · full reports on GitHub</span>
+          <a class="work-all" href="https://github.com/rubankumar296-maker" target="_blank" rel="noopener">
+            All repositories
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── SERVICES ───────────────────────── -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label"><span>03</span> Service</div>
+          <div class="section-head-row">
+            <h2 class="section-title">Service</h2>
+            <p class="section-note">
+              A practical toolkit for the full analytics workflow — not just the software,
+              but the habits that make the output trustworthy.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-num">01</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 7 4 12l4 5M16 7l4 5-4 5M13.5 4l-3 16"></path></svg>
+            </div>
+            <h3>Prepare &amp; explore</h3>
+            <p>Turn raw tables into analysis-ready datasets, then use EDA to find the patterns worth explaining.</p>
+            <ul class="chips">
+              <li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal" data-delay="1">
+            <span class="service-num">02</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg>
+            </div>
+            <h3>Query &amp; model</h3>
+            <p>Translate business questions into SQL that is readable, validated, and built to answer more than one question.</p>
+            <ul class="chips">
+              <li>MySQL</li><li>CTEs</li><li>Window functions</li><li>Joins</li><li>Relational DBs</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal" data-delay="2">
+            <span class="service-num">03</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+            </div>
+            <h3>Visualise &amp; explain</h3>
+            <p>Design Power BI reports with sensible KPIs, clean navigation, and takeaways a non-technical reader can act on.</p>
+            <ul class="chips">
+              <li>Power BI</li><li>DAX</li><li>Data modelling</li><li>KPI dashboards</li><li>Storytelling</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── TOOLKIT ───────────────────────── -->
+    <section class="section section-soft" id="toolkit">
+      <div class="container">
+        <div class="toolkit-grid">
+          <div class="toolkit-intro reveal">
+            <div class="section-label"><span>04</span> Toolkit</div>
+            <h2 class="section-title">Toolkit</h2>
+            <p class="section-note">
+              I'm deliberately tool-agnostic about the destination: the goal is a decision
+              someone can trust, not a dashboard for its own sake.
+            </p>
+            <a class="text-link" href="https://github.com/rubankumar296-maker" target="_blank" rel="noopener">
+              See the code on GitHub
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+            </a>
+          </div>
+
+          <div class="toolkit-list">
+            <div class="toolkit-row reveal">
+              <div class="toolkit-row-head">
+                <span class="toolkit-index">01</span>
+                <h3>Programming &amp; analysis</h3>
+              </div>
+              <p>Cleaning, transforming, and exploring data; statistical analysis and repeatable Python workflows.</p>
+              <ul class="chips">
+                <li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>EDA</li>
+              </ul>
+            </div>
+
+            <div class="toolkit-row reveal" data-delay="1">
+              <div class="toolkit-row-head">
+                <span class="toolkit-index">02</span>
+                <h3>SQL &amp; databases</h3>
+              </div>
+              <p>Answering business questions with structured queries, CTEs, joins, and window functions.</p>
+              <ul class="chips">
+                <li>SQL</li><li>MySQL</li><li>CTEs</li><li>Window functions</li><li>Joins</li><li>Normalisation</li>
+              </ul>
+            </div>
+
+            <div class="toolkit-row reveal" data-delay="2">
+              <div class="toolkit-row-head">
+                <span class="toolkit-index">03</span>
+                <h3>Business intelligence</h3>
+              </div>
+              <p>Building modelled reports with calculated measures and drill-through that stay readable as questions get specific.</p>
+              <ul class="chips">
+                <li>Power BI</li><li>DAX</li><li>Data modelling</li><li>Calculated measures</li><li>KPI dashboards</li><li>Drill-through</li>
+              </ul>
+            </div>
+
+            <div class="toolkit-row reveal" data-delay="3">
+              <div class="toolkit-row-head">
+                <span class="toolkit-index">04</span>
+                <h3>Spreadsheets &amp; workflow</h3>
+              </div>
+              <p>Spreadsheet reporting, ETL workflows, version control, and sharing work that others can pick up.</p>
+              <ul class="chips">
+                <li>Excel</li><li>Pivot tables</li><li>VLOOKUP</li><li>ETL workflows</li><li>Git</li><li>GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-block">
+          <div class="process-intro reveal">
+            <div class="section-label"><span>05</span> Process</div>
+            <h2 class="process-title">Process</h2>
+          </div>
+
+          <div class="process-head reveal">
+            <span class="mini-label">How I work</span>
+            <span class="process-rule" aria-hidden="true"></span>
+            <span class="mini-label">Ask → Prepare → Analyse → Explain</span>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <span class="process-num">01</span>
+              <h3>Ask</h3>
+              <p>Frame the business question before touching the data. A good analysis starts with the decision, not the dataset.</p>
+            </article>
+            <article class="process-card reveal" data-delay="1">
+              <span class="process-num">02</span>
+              <h3>Prepare</h3>
+              <p>Clean, validate, and document. I check the grain, the gaps, and the assumptions before trusting a total.</p>
+            </article>
+            <article class="process-card reveal" data-delay="2">
+              <span class="process-num">03</span>
+              <h3>Analyse</h3>
+              <p>Use Python and SQL to explore patterns, compare segments, and find the metrics that actually move the story.</p>
+            </article>
+            <article class="process-card reveal" data-delay="3">
+              <span class="process-num">04</span>
+              <h3>Explain</h3>
+              <p>Turn the findings into an interactive report with clear takeaways, sensible caveats, and next steps.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── CREDENTIALS ───────────────────────── -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label"><span>06</span> Credentials</div>
+          <div class="section-head-row">
+            <h2 class="section-title">Credentials</h2>
+            <p class="section-note">
+              An engineering background and a hands-on data analytics practice built around
+              SQL, Power BI, and Python.
+            </p>
+          </div>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="education-card reveal">
+            <div class="credential-topline">
+              <span class="mini-label">Education</span>
+              <span class="credential-badge">2022 — 2026</span>
+            </div>
+            <div class="education-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z"></path><path d="M6.5 11.2V16c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.8M21.5 9v6"></path></svg>
+            </div>
+            <h3>B.E. Electronics &amp; Communication Engineering</h3>
+            <p class="education-school">Sri Venkateswaraa College of Technology, Chennai</p>
+            <div class="education-meta">
+              <div><span>CGPA</span><strong>7.09 / 10</strong></div>
+              <div><span>Graduated</span><strong>2026</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────────────────── CONTACT ───────────────────────── -->
+  <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-top reveal">
+          <div class="section-label section-label-invert"><span>07</span> Thank you</div>
+          <span class="status-pill status-pill-invert"><i class="status-dot"></i>Open to opportunities</span>
+        </div>
+
+        <div class="contact-main">
+          <div class="contact-copy reveal">
+            <h2 id="contactTitle">Thank <em>you</em></h2>
+            <p>
+              I'm looking for my first data analyst role, an internship, or a freelance dashboard
+              project. If you have a dataset that needs a story — or a team that needs a curious
+              analyst — I'd love to connect.
+            </p>
+            <a class="contact-email" href="mailto:rubankumar296@gmail.com">
+              rubankumar296@gmail.com
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+            </a>
+            <div class="contact-actions">
+              <a class="btn btn-light" href="mailto:rubankumar296@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+                Email me
+              </a>
+              <a class="btn btn-dark-outline" href="assets/Ruban-Kumar-N-Resume.pdf" download>
+                Download résumé
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <aside class="contact-side reveal" data-delay="1" aria-label="Contact details">
+            <div class="contact-detail">
+              <span>Location</span>
+              <strong>Chennai, Tamil Nadu, India</strong>
+            </div>
+            <div class="contact-detail">
+              <span>Phone</span>
+              <a href="tel:+918428908154">+91 84289 08154</a>
+            </div>
+            <div class="contact-detail">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/rubankumar7" target="_blank" rel="noopener">linkedin.com/in/rubankumar7</a>
+            </div>
+            <div class="contact-detail">
+              <span>GitHub</span>
+              <a href="https://github.com/rubankumar296-maker" target="_blank" rel="noopener">@rubankumar296-maker</a>
+            </div>
+            <div class="contact-detail contact-detail-full">
+              <span>Open to</span>
+              <strong>Entry-level data analyst roles · Analytics internships · Freelance dashboards</strong>
+            </div>
+
+            <button class="copy-email" id="copyEmail" type="button" data-copy="rubankumar296@gmail.com" aria-label="Copy email address rubankumar296@gmail.com">
+              <span class="copy-email-label">Copy email address</span>
+              <span class="copy-email-value">rubankumar296@gmail.com
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"></path></svg>
+              </span>
+              <span class="copy-tip" role="status">Copied!</span>
+            </button>
+          </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-mark">RK</span>
+            <span class="brand-copy">
+              <span class="brand-name">Ruban Kumar N</span>
+              <span class="brand-role">Data Analyst · Portfolio 2026</span>
+            </span>
+          </a>
+
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#about">About me</a>
+            <a href="#work">Project Section</a>
+            <a href="#toolkit">Toolkit</a>
+            <a href="#credentials">Credentials</a>
+            <a href="https://github.com/rubankumar296-maker" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/rubankumar7" target="_blank" rel="noopener">LinkedIn</a>
+          </nav>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>&copy; <span id="year">2026</span> Ruban Kumar N. Built with curiosity and vanilla code.</p>
+          <div class="footer-meta">
+            <span class="local-clock" id="localClock">Chennai, IN · --:-- IST</span>
+            <a class="back-top" href="#top">
+              Back to top
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>
+            </a>
+          </div>
+        </div>
+  </footer>
+
+  <!-- ───────────────────────── PROJECT DIALOG ───────────────────────── -->
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="modalTitle">
+    <div class="dialog-shell">
+      <div class="dialog-toolbar">
+        <span class="dialog-label">Case study</span>
+        <button class="dialog-close" id="modalClose" type="button" aria-label="Close case study">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+
+      <div class="dialog-scroll">
+        <div class="dialog-gallery">
+          <div class="dialog-main-image">
+            <img id="modalMainImage" alt="">
+            <div class="dialog-arrows">
+              <button class="dialog-arrow" id="prevImage" type="button" aria-label="Previous screenshot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+              </button>
+              <span class="dialog-count" id="imageCount">1 / 4</span>
+              <button class="dialog-arrow" id="nextImage" type="button" aria-label="Next screenshot">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </button>
+            </div>
+          </div>
+          <div class="dialog-thumbs" id="modalThumbs" role="group" aria-label="Dashboard screenshots"></div>
+        </div>
+
+        <div class="dialog-content">
+          <span class="project-badge" id="modalCategory"></span>
+          <h2 id="modalTitle"></h2>
+          <p class="modal-tagline" id="modalTagline"></p>
+
+          <div class="modal-meta">
+            <div><span>Role</span><strong>End-to-end analyst</strong></div>
+            <div><span>Type</span><strong>Portfolio project</strong></div>
+            <div><span>Stack</span><strong id="modalStackShort"></strong></div>
+          </div>
+
+          <div class="modal-section">
+            <h3>The challenge</h3>
+            <p id="modalChallenge"></p>
+          </div>
+
+          <div class="modal-section">
+            <h3>What I did</h3>
+            <ul class="modal-list" id="modalHighlights"></ul>
+          </div>
+
+          <div class="modal-section">
+            <h3>Inside the report</h3>
+            <ul class="modal-list modal-list-dash" id="modalDash"></ul>
+          </div>
+
+          <div class="modal-section">
+            <h3>Tools used</h3>
+            <ul class="chips" id="modalStack"></ul>
+          </div>
+
+          <a class="btn btn-primary modal-link" id="modalGithub" href="#" target="_blank" rel="noopener">
+            View full repository
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
